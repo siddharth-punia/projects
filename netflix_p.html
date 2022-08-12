@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix_p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .netflix-logo{
+            margin-left: 50px;
+        }
+
+        .dropdown{
+            /* margin-right: 150px; */
+            margin-left: 900px;
+        }
+        .d-flex button{
+            height: 40px;
+            margin-right: 50px;
+        }
+
+        .h1{
+            font-size: 70px;
+        }
+        .input-group{
+            width: 800px;
+            margin-left: 300px;
+            height: 70px;
+            border-radius: 0;
+        }
+        .input-group-text{
+            background-color: #e50914;
+            color: aliceblue;
+            font-size: 35px;
+            padding:5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .first{
+          margin-top: 150px;
+        }
+      
+        .card-title{
+          font-size: 60px;
+        }
+
+        .btn{
+          width: 110px;
+        }
+
+        .accordion{
+          width: 800px;
+          /* height: 300px; */
+          /* margin-top: 50px; */
+          margin-left: 300px;
+          /* size: 800px; */
+        }
+        .accordion-item{
+          margin-bottom: 10px;
+        }
+
+        .topfaq{
+          margin-top: 50px;
+        }
+
+        .list-group-item{
+          background-color: black;
+          color: #737373;
+        }
+
+        .flex-last{
+          column-gap: 70px;
+        }
+
+        .call{
+          color: #737373;
+          margin-left: 290px;
+        }
+
+        .last{
+          margin-top: 70px;
+        }
+
+        .eng-button{
+          margin-left: 290px;
+          margin-top: 30px;
+        }
+        .end{
+          margin-left: 280px;
+          margin-top: 20px;
+        }
+        .btn-clr{
+          background-color: black;
+
+        }
+    </style>
+    
+
+</head>
+<body>
+
+  <!-- --------------------------FRONT PAGE---------------------------------------- -->
+    <header>
+        <div class="card bg-dark text-white">
+            <img src="./netflix-background-dark.jpg" class="card-img" alt="..." >
+            <div class="card-img-overlay">
+                <div class="d-flex justify-content-between">
+            <img class="netflix-logo" src="./netflix_official_logo_icon_168085.png" alt="" height="50px" width="200px">
+            
+            
+            
+            <select data-uia="language-picker-header bg-dark text-light text-center" style="position:absolute; margin-left: 1130px;background-color:black; width: 110px;height: 40px; color: aliceblue; padding-left: 25px;" class="ui-select medium" id="lang-switcher-header-select" tabindex="0" placeholder="lang-switcher">
+              
+              
+              <option selected="" lang="en" value="/in/" data-language="en" data-country="IN">
+                 English
+              </option>
+              
+              <option lang="hi" value="/in-hi/" data-language="hi" data-country="IN">हिन्दी</option>
+            </select>
+            <span class="fa-solid fa-globe" style=" position:absolute; margin-left:1138px; margin-top: 12px;"></span>
+
+            <!-- <div class="dropdown">
+              
+                <button class="btn btn-secondary dropdown-toggle btn-clr" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style="border: radius 0; ;">
+                  
+                  <span class="fa-solid fa-globe"></span>
+                  English
+                </button>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+              </div> -->
+
+              
+              <button type="button" class="btn btn-danger " style="background-color:#e50914 ;">Sign In</button>
+            
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+                
+            <p class="h1" style="text-align:center;">Unlimited movies, TV <br> shows and more.</p>
+        
+              <p class="card-text h2" style="text-align:center;">Watch anywhere. Cancel anytime.</p>
+              <br>
+              <p class="card-text h5" style="text-align:center;">Ready to watch? Enter your email to create or restart your membership.</p>
+            <br>
+              <div class="input-group mb-3" style="text-align:center ;">
+                <input type="text" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2"> Get started > </span>
+              </div>
+            </div>
+          </div>
+    
+          
+    </header>
+
+    
+   
+
+      <!-------------------------------- FIRST TEMPLATE ---------------------------------- -->
+      <div style="background-color:#737373; height:5px; width:1450px">
+
+      </div>
+      <span>
+      <div class="card bg-dark text-white">
+        <img src="./black.webp" class="card-img" alt="..." height="500px">
+        <div class="card-img-overlay">
+          <div class="container text-center">
+
+            <div class="row">
+              
+              <div class="col-sm-5 col-md-6 first">
+                <h5 class="card-title">
+                  Enjoy on your TV.
+
+                </h5>
+                      <p class="card-text">
+                        <h3> Watch on smart TVs, PlayStation, Xbox, <br> Chromecast, Apple TV, Blu-ray players and <br> more.</h3>
+                      </p>
+        
+              </div>
+              <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                <img src="./nt-tv.png" alt="" width="550px" height="400px">
+
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </span>
+
+    <span style="background-color:#737373; height:5px; width:1450px">
+
+    </span>
+          <!-------------------------------- SECOND TEMPLATE ---------------------------------- -->
+          <span>
+            <div class="card bg-dark text-white">
+              <img src="./black.webp" class="card-img" alt="..." height="500px">
+              <div class="card-img-overlay">
+                <div class="container text-center">
+      
+                  <div class="row">
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                      <img src="./nt-3.jpg" alt="" width="550px" height="400px">
+                   
+                    </div>
+                   
+                      
+                      <div class="col-sm-5 col-md-6 first">
+                        <h5 class="card-title">
+                          Download your shows 
+                          to watch offline.
+                          
+                        </h5>
+                              <p class="card-text">
+                                <h3>
+                                  Save your favourites easily and always have 
+                                  something to watch.
+                                  </h3>
+                              </p>
+                
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </span>
+      
+          <span style="background-color:#737373; height:5px; width:1450px">
+
+          </span>
+                <!-------------------------------- THIRD TEMPLATE ---------------------------------- -->
+      <span>
+        <div class="card bg-dark text-white">
+          <img src="./black.webp" class="card-img" alt="..." height="500px">
+          <div class="card-img-overlay">
+            <div class="container text-center">
+  
+              <div class="row">
+                
+                <div class="col-sm-5 col-md-6 first">
+                  <h5 class="card-title">
+                    Watch everywhere.
+  
+                  </h5>
+                        <p class="card-text">
+                          <h3>
+                            Stream unlimited movies and TV shows on <br>
+                            your phone, tablet, laptop, and TV.
+                            </h3>
+                        </p>
+          
+                </div>
+                <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                  <img src="./nt-4.png" alt="" width="550px" height="400px">
+  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </span>
+  
+      <span style="background-color:#737373; height:5px; width:1450px">
+
+      </span>
+
+     <!-------------------------------- FOURTH TEMPLATE ---------------------------------- -->
+     <span>
+      <div class="card bg-dark text-white">
+        <img src="./black.webp" class="card-img" alt="..." height="500px">
+        <div class="card-img-overlay">
+          <div class="container text-center">
+
+            <div class="row">
+              <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                <img src="./nt-5.png" alt="" width="550px" height="400px">
+             
+              </div>
+             
+                
+                <div class="col-sm-5 col-md-6 first">
+                  <h5 class="card-title">
+                    Create profiles for 
+                    children.
+                    
+                  </h5>
+                        <p class="card-text">
+                          <h3>
+                            Send children on adventures with their <br>
+                             favourite characters in a space made just for <br>
+                              them—free with your membership.
+                            </h3>
+                        </p>
+          
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </span>
+      
+
+    <span style="background-color:#737373; height:5px; width:1450px">
+
+    </span>
+  
+    <!-- -----------------------FREQUENTLY ASKED QUESTIONS------------------------------ -->
+
+    <div class="card text-bg-dark">
+      <img src="./black.webp" class="card-img" alt="..." height="1500px">
+      <div class="card-img-overlay">
+        <h5 class="card-title" style="text-align:center ;">Frequently Asked Questions</h5>
+
+        <h3>
+          
+        <div class="accordion accordion-flush topfaq" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header bg-dark" id="flush-headingOne">
+              <button class="accordion-button collapsed bg-dark text-white " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+               <h3> What is Netflix?</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body bg-dark text-white ">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices. <br>
+                <br>
+
+                You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed bg-dark text-white " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+               <h3> How much does Netflix cost?</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body bg-dark text-white ">
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed bg-dark text-white " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+               <h3> Where can I watch?</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body bg-dark text-white ">
+                Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. <br>
+                <br>
+
+                You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+              </div>
+            </div>
+          </div>
+        </div>
+        </h1>
+
+        <h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button bg-dark text-white " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               <h3> How do I cancel?</h3>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-dark text-white ">
+                Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed bg-dark text-white " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h3>What can I watch on Netflix?</h3>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-dark text-white ">
+                Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed bg-dark text-white " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h3> Is Netflix good for kids?</h3> 
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-dark text-white ">
+                The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                <br>
+                <br>
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+              </div>
+            </div>
+          </div>
+        </div>
+      </h3>
+
+      <br>
+      <br>
+      <br>
+      <p class="card-text h5" style="text-align:center;">Ready to watch? Enter your email to create or restart your membership.</p>
+      <br>
+        <div class="input-group mb-3" style="text-align:center ;">
+          <input type="text" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2"> Get started > </span>
+        </div>
+      </div>
+    </div>
+      
+
+    <span style="background-color:#737373; height:5px; width:1450px">
+
+    </span>
+
+    <!-- -----------------------------LAST --------------------------------------- -->
+
+    <div class="card text-bg-dark">
+      <img src="./black.webp" class="card-img" alt="..." height="500px">
+      <div class="card-img-overlay last">
+        <p class="card-text call">Questions? Call 000-800-040-1843</p>
+
+        <div class="d-flex justify-content-center flex-last">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">FAQ</li>
+            <li class="list-group-item">Investor Relations</li>
+            <li class="list-group-item">Privacy</li>
+            <li class="list-group-item">Speed Test</li>
+            
+          </ul>
+        
+        
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Help Center</li>
+          <li class="list-group-item">Jobs</li>
+          <li class="list-group-item">Cookie Preferences</li>
+          <li class="list-group-item">Legal Notices</li>
+          
+        </ul>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Account</li>
+          <li class="list-group-item">Ways to Watch</li>
+          <li class="list-group-item">Corporate Information</li>
+          <li class="list-group-item">Only on Netflix</li>
+          
+        </ul>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Media Center</li>
+          <li class="list-group-item">Terms of Use</li>
+          <li class="list-group-item">Contact Us</li>
+          
+          
+        </ul>
+
+        
+      </div>
+      <select data-uia="language-picker-header bg-dark text-light text-center" style="position:absolute; margin-left: 300px;background-color:black; width: 110px;height: 40px; color: aliceblue; padding-left: 25px;" class="ui-select medium" id="lang-switcher-header-select" tabindex="0" placeholder="lang-switcher">
+              
+              
+        <option selected="" lang="en" value="/in/" data-language="en" data-country="IN" >
+          English
+        </option>
+        
+        <option lang="hi" value="/in-hi/" data-language="hi" data-country="IN">हिन्दी</option>
+      </select>
+      <span class="fa-solid fa-globe" style=" position:absolute; margin-left:308px; margin-top: 12px;"></span>
+      <br>
+      <li class="list-group end list-group-item">Netflix India</li>
+      </div>
+
+      
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
